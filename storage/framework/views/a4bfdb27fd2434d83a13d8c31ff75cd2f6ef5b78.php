@@ -22,6 +22,7 @@
                 <a class="nav-item nav-link active" href="<?php echo e(url('/')); ?>">Home</a>
                 <a class="nav-item nav-link" href="<?php echo e(url('/about')); ?>">About</a>
                 <a class="nav-item nav-link" href="<?php echo e(url('/mahasiswa')); ?>">Mahasiswa</a>
+                <a class="nav-item nav-link" href="<?php echo e(url('/students')); ?>">Students</a>
             </div>
         </div>
     </div>
