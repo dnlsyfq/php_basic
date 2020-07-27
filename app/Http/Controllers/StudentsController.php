@@ -38,7 +38,34 @@ class StudentsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // method 1
+//        $student = new Student;
+//        $student->nama=$request->nama;
+//        $student->nrp=$request->nrp;
+//        $student->email=$request->email;
+//        $student->jurusan=$request->jurusan;
+//
+//        $student->save();
+
+        // method 2
+//        Student::create([
+//            'nama' => $request->nama,
+//            'nrp' => $request->nrp,
+//            'email' => $request->email,
+//            'jurusan' => $request->jurusan
+//        ]);
+
+        // method 3
+
+
+
+
+        Student::create($request->all());
+
+
+        return redirect('/students')->with('status','Data Mahasiswa Berhasil Ditambahkan!');
+
+
     }
 
     /**
