@@ -129,3 +129,13 @@ if( $year ){
         echo "<br> $meteor";
     }
 ```
+
+# Laravel
+
+<img src="img/mvc.jpg">
+
+* install via composer
+```
+composer create-project laravel/laravel --prefer-dist
+composer create-project laravel/laravel <name>
+```
