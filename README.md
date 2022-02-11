@@ -6,6 +6,36 @@
 ?>
 ```
 
+```
+class Menu {
+    public $name;
+}
+
+$curry = new Menu();
+
+$curry->name = 'Curry';
+
+echo $curry->name;
+```
+
+```
+class Menu {
+    public static $count = 4; // adding static makes thius a class property
+}
+
+echo 'Item count: '.Menu::$count;
+```
+
+### String interpolation
+
+```
+$dog_name = "Tadpole";
+$favorite_food = "treat";
+$color = "brown";
+ 
+echo "I have a ${color}ish dog named $dog_name and her favorite food is ${favorite_food}s.";
+```
+
 ### Array
 
 * create array 
