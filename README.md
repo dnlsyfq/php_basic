@@ -1,4 +1,45 @@
 
+
+* HTML in PHP
+```
+<p>This HTML will get delivered as is</p>
+<?php echo "<p>But this code is interpreted by PHP and turned into HTML</p>";?>
+
+```
+
+* string PHP 
+```
+echo "She said \"hi\" to the dog.";
+
+echo "1. Go to gym";
+echo "\n2. Cook dinner"; 
+
+echo "one" . "two";
+
+$toy = "frisbee";
+echo "Alex likes playing with $toy";
+
+$dog_name = "Tadpole";
+$favorite_food = "treat";
+$color = "brown";
+ 
+echo "I have a ${color}ish dog named $dog_name and her favorite food is ${favorite_food}s.";
+
+$full_name = "Aisle";
+$full_name .= " Nevertell";
+
+assignment operator (=&).
+When we assign by reference we’re saying that the variable on the left of the operator should point, or refer, to the exact same data as the variable on the right
+
+$first_player_rank = "Beginner";
+$second_player_rank =& $first_player_rank; 
+echo $second_player_rank; // Prints: Beginner
+ 
+$first_player_rank = "Intermediate"; // Reassign the value of $first_player_rank
+echo $second_player_rank; // Prints: Intermediate
+```
+
+
 ```
 <?php 
     $name = 'Hoba';
